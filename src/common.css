@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --light-green: #82f289;
+  --light-pink: #ffeef9;
+  --light-gray: #ccc;
+  --font-base-size: 16px;
+  --font-tooltip-size: 14px;
+}
