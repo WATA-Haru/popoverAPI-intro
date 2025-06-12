@@ -80,8 +80,6 @@ const hideTooltipMessage = () => {
   background-color: var(--light-green);
   border: 1px solid var(--light-gray);
   font-size: var(--font-base-size);
-
-  /** divが横いっぱいに広がるのを防ぐ*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,11 +122,10 @@ const hideTooltipMessage = () => {
 }
 
 .tooltip__content {
-  /** 下記のdisplay:flex;を使うため親要素に大きさを合わせる */
   font-size: var(--font-tooltip-size);
   color: darkslategray;
 
-  /** 吹き出しのスタイリング */
+  /** 吹き出しの文字を折り返す*/
   overflow-wrap: break-word;
 }
 </style>

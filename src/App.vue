@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import StepTooltip from '@/components/StepTooltip/index.vue'
+import StepTooltip from './components/StepTooltip/index.vue'
 
 type data = {
   index: number
@@ -38,6 +38,7 @@ const stepItems: data[] = [
           :index="item.index"
           :stepTitle="item.stepTitle"
           :tooltipMessage="item.tooltipMessage"
+          class="step__item"
         />
       </li>
     </ol>
@@ -48,6 +49,11 @@ const stepItems: data[] = [
   list-style-type: none;
   display: flex;
   gap: 30px;
+}
+.stepper__item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 .body {
   margin-top: 200px;
